@@ -5,11 +5,9 @@ In this project, you will write a program to simulate a game of war. A user will
 
 In order to build good habits, we’ve broken the project into small classes to demonstrate objects that have a single responsibility.
 
-Iteration 1
+# Iteration 1
 Cards
-A Card represents a single card that would be in a traditional deck of 52 cards.
-
-Use the tests provided to drive the development of your Card class. From the root directory of your project, run the test like this:
+- A Card represents a single card that would be in a traditional deck of 52 cards. Use the tests provided to drive the development of your Card class. From the root directory of your project, run the test like this:
 
 rspec spec/card_spec.rb
 If you haven’t already, you will need to install minitest:
@@ -17,7 +15,7 @@ If you haven’t already, you will need to install minitest:
 gem install rspec
 If your Card class is written properly and is located at ./lib/card.rb, you should be able to open a pry session from your war_or_peace directory and interact with it like so:
 
-# double check that you are in your war_or_peace project directory!
+- double check that you are in your war_or_peace project directory!
 pry(main)> require './lib/card'
 #=> true
 
@@ -46,7 +44,6 @@ Use the interaction pattern below to help you build your Deck test and Deck clas
 
 Remember, #<Card:0x00randomletters&nums...> means “A Card Object” or “An Instance of the Card Class”. If you need to verify which card object it is, you can refer to the last few digits of the ‘random’ letters and numbers and match those to a card that is created near the top of the interaction pattern.
 
-```ruby
 pry(main)> require './lib/card'
 #=> true
 
@@ -110,5 +107,3 @@ pry(main)> deck.high_ranking_cards
 
 pry(main)> deck.percent_high_ranking
 #=> 33.33
-```
-
